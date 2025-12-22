@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jharkhand Tourism - Discover Hidden Gems</title>
+    <meta name="description" content="Experience Jharkhand's pristine waterfalls, ancient tribal culture, and untouched wilderness. AI-powered tourism platform connecting you with local communities and authentic experiences.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jharkhand Tourism - Discover Hidden Gems">
+    <meta property="og:description" content="Experience Jharkhand's pristine waterfalls, ancient tribal culture, and untouched wilderness.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="public/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🏔️</span>
+                <span class="brand-text">Jharkhand Tourism</span>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#destinations" class="nav-link">Destinations</a>
+                <a href="#culture" class="nav-link">Culture</a>
+                <a href="#marketplace" class="nav-link">Marketplace</a>
+                <a href="#ai-assistant" class="nav-link">AI Assistant</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <img src="src/assets/hero-jharkhand.jpg" alt="Jharkhand landscape" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Discover the 
+                    <span class="hero-gradient">Hidden Gems</span>
+                    of Jharkhand
+                </h1>
+                
+                <p class="hero-description">
+                    Experience pristine waterfalls, ancient tribal culture, and untouched wilderness. 
+                    Let AI guide your perfect journey through India's best-kept secret.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-hero btn-lg">
+                        <i data-lucide="message-circle"></i>
+                        Start AI Planning
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    
+                    <button class="btn btn-cultural btn-lg">
+                        <i data-lucide="map-pin"></i>
+                        Explore Destinations
+                    </button>
+                    
+                    <button class="btn btn-nature btn-lg">
+                        <i data-lucide="calendar"></i>
+                        Plan Your Trip
+                    </button>
+                </div>
+                
+                <!-- Quick Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number primary">50+</div>
+                        <div class="stat-label">Destinations</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number tribal">30+</div>
+                        <div class="stat-label">Tribal Villages</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number accent">15+</div>
+                        <div class="stat-label">Waterfalls</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-wheel">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Explore <span class="hero-gradient">Destinations</span>
+                </h2>
+                <p class="section-description">
+                    From misty hill stations to thundering waterfalls, discover the diverse landscapes 
+                    and rich cultural heritage that make Jharkhand extraordinary.
+                </p>
+            </div>
+
+            <div class="destinations-grid" id="destinationsGrid">
+                <!-- Destinations will be populated by JavaScript -->
+            </div>
+
+            <div class="section-cta">
+                <button class="btn btn-hero btn-lg">
+                    <i data-lucide="map-pin"></i>
+                    View Interactive Map
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Highlights Section -->
+    <section id="culture" class="culture-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Rich <span class="cultural-gradient">Cultural Heritage</span>
+                </h2>
+                <p class="section-description">
+                    Immerse yourself in the vibrant traditions of Jharkhand's tribal communities. 
+                    Experience living culture through festivals, crafts, and time-honored practices.
+                </p>
+            </div>
+
+            <!-- Cultural Events -->
+            <div class="culture-subsection">
+                <h3 class="subsection-title">Upcoming Cultural Events</h3>
+                <div class="culture-events-grid" id="cultureEventsGrid">
+                    <!-- Events will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Traditions -->
+            <div class="culture-subsection">
+                <h3 class="subsection-title">Traditional Arts & Crafts</h3>
+                <div class="traditions-grid" id="traditionsGrid">
+                    <!-- Traditions will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="section-cta">
+                <div class="cta-buttons">
+                    <button class="btn btn-cultural btn-lg">
+                        <i data-lucide="calendar"></i>
+                        View Event Calendar
+                    </button>
+                    <button class="btn btn-nature btn-lg">
+                        <i data-lucide="palette"></i>
+                        Cultural Workshops
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Marketplace Section -->
+    <section id="marketplace" class="marketplace-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Local <span class="cultural-gradient">Marketplace</span>
+                </h2>
+                <p class="section-description">
+                    Support local communities while enriching your journey. Discover authentic handicrafts, 
+                    homestays, and experiences directly from tribal artisans and local entrepreneurs.
+                </p>
+            </div>
+
+            <div class="marketplace-grid" id="marketplaceGrid">
+                <!-- Marketplace items will be populated by JavaScript -->
+            </div>
+
+            <div class="section-cta">
+                <div class="cta-buttons">
+                    <button class="btn btn-cultural btn-lg">
+                        <i data-lucide="shopping-bag"></i>
+                        Browse All Products
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        Become a Seller
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="trust-indicators">
+                <div class="trust-item primary">
+                    <div class="trust-number">100+</div>
+                    <div class="trust-label">Verified Local Sellers</div>
+                </div>
+                <div class="trust-item tribal">
+                    <div class="trust-number">500+</div>
+                    <div class="trust-label">Authentic Products</div>
+                </div>
+                <div class="trust-item nature">
+                    <div class="trust-number">₹2L+</div>
+                    <div class="trust-label">Earned by Communities</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant Section -->
+    <section id="ai-assistant" class="ai-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    AI-Powered <span class="hero-gradient">Travel Assistant</span>
+                </h2>
+                <p class="section-description">
+                    Get personalized recommendations, real-time guidance, and cultural insights 
+                    powered by AI that understands Jharkhand's unique heritage.
+                </p>
+            </div>
+
+            <div class="ai-layout">
+                <!-- AI Features -->
+                <div class="ai-features">
+                    <div class="feature-card primary-card">
+                        <div class="feature-header">
+                            <i data-lucide="sparkles" class="feature-icon"></i>
+                            <h3 class="feature-title">AI Capabilities</h3>
+                        </div>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i data-lucide="map-pin" class="item-icon accent"></i>
+                                <span>Personalized Itineraries</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="calendar" class="item-icon tribal"></i>
+                                <span>Real-time Planning</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="users" class="item-icon nature"></i>
+                                <span>Cultural Guidance</span>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="message-circle" class="item-icon primary"></i>
+                                <span>Multilingual Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggestions-card">
+                        <h3 class="card-title">Quick Suggestions</h3>
+                        <div class="suggestions-list" id="suggestionsList">
+                            <!-- Suggestions will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Interface -->
+                <div class="chat-interface">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <i data-lucide="bot"></i>
+                            Jharkhand Tourism AI Assistant
+                        </div>
+                        <div class="status-badge">Online</div>
+                    </div>
+                    
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be populated by JavaScript -->
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input 
+                            type="text" 
+                            id="messageInput" 
+                            placeholder="Ask about destinations, culture, planning..."
+                            class="message-input"
+                        >
+                        <button id="sendButton" class="send-button">
+                            <i data-lucide="send"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-icon">🏔️</span>
+                    <span class="brand-text">Jharkhand Tourism</span>
+                </div>
+                <p class="footer-description">
+                    Discover the hidden gems of Jharkhand with AI-powered guidance and authentic local experiences.
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jharkhand Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
