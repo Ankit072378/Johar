@@ -536,9 +536,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const responses = [
             "I'd be happy to help you plan your Jharkhand adventure! Let me suggest some amazing destinations based on your interests.",
             "Great question! Jharkhand has incredible hidden gems. I can recommend some authentic experiences that showcase the rich tribal culture.",
-            "That sounds like an exciting trip! I can help you create a personalized itinerary that includes the best waterfalls, cultural sites, and local experiences.",
-            "Perfect! I have some wonderful suggestions for cultural experiences, including tribal villages, traditional craft workshops, and local festivals.",
-            "If you want to know more about jharkhand , i'm here to help you"
+            
             
         ];
         
