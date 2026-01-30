@@ -1,6 +1,5 @@
-/* Design System Variables */
+
 :root {
-  /* Colors - HSL format for better control */
   --primary: 142 71% 45%;
   --primary-glow: 142 86% 60%;
   --primary-foreground: 0 0% 98%;
@@ -30,27 +29,27 @@
   --popover: 0 0% 100%;
   --popover-foreground: 222.2 84% 4.9%;
   
-  /* Custom theme colors */
+
   --tribal-orange: 25 95% 53%;
   --heritage-brown: 30 50% 30%;
   --nature-green: 120 60% 40%;
   --earth-red: 15 85% 45%;
   
-  /* Gradients */
+
   --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
   --gradient-cultural: linear-gradient(135deg, hsl(var(--tribal-orange)), hsl(var(--heritage-brown)));
   --gradient-nature: linear-gradient(135deg, hsl(var(--nature-green)), hsl(var(--primary)));
   --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
   
-  /* Shadows */
+
   --shadow-gentle: 0 2px 8px -2px hsl(var(--primary) / 0.1);
   --shadow-forest: 0 10px 30px -10px hsl(var(--nature-green) / 0.3);
   --shadow-cultural: 0 8px 25px -8px hsl(var(--tribal-orange) / 0.25);
   
-  /* Transitions */
+  
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
-  /* Typography */
+
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -64,7 +63,6 @@
   --font-size-7xl: 4.5rem;
 }
 
-/* Dark mode variables */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: 222.2 84% 4.9%;
@@ -89,7 +87,6 @@
   }
 }
 
-/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -111,7 +108,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Utility Classes */
+
 .text-gradient-hero {
   background: var(--gradient-hero);
   -webkit-background-clip: text;
@@ -133,7 +130,7 @@ body {
   background-clip: text;
 }
 
-/* Button Styles */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -220,7 +217,7 @@ body {
   font-size: var(--font-size-xs);
 }
 
-/* Header Styles */
+
 .header {
   position: fixed;
   top: 0;
@@ -297,7 +294,7 @@ body {
   color: hsl(var(--foreground));
 }
 
-/* Hero Section */
+
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -418,7 +415,7 @@ body {
   animation: pulse 2s infinite;
 }
 
-/* Section Styles */
+
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -450,7 +447,7 @@ body {
   justify-content: center;
 }
 
-/* Destinations Section */
+
 .destinations-section {
   padding: 5rem 0;
   background: var(--gradient-subtle);
@@ -542,7 +539,7 @@ body {
   font-size: var(--font-size-xs);
 }
 
-/* Culture Section */
+
 .culture-section {
   padding: 5rem 0;
   background: var(--gradient-subtle);
@@ -669,7 +666,7 @@ body {
   font-size: var(--font-size-xs);
 }
 
-/* Marketplace Section */
+
 .marketplace-section {
   padding: 5rem 0;
   background: hsl(var(--background));
@@ -842,7 +839,7 @@ body {
   color: hsl(var(--muted-foreground));
 }
 
-/* AI Section */
+
 .ai-section {
   padding: 5rem 0;
   background: hsl(var(--background));
@@ -962,7 +959,7 @@ body {
   color: hsl(var(--primary));
 }
 
-/* Chat Interface */
+
 .chat-interface {
   background: hsl(var(--card));
   border: 1px solid hsl(var(--border));
@@ -1139,7 +1136,7 @@ body {
   cursor: not-allowed;
 }
 
-/* Footer */
+
 .footer {
   background: hsl(var(--muted));
   padding: 2rem 0;
@@ -1174,7 +1171,7 @@ body {
   font-size: var(--font-size-sm);
 }
 
-/* Animations */
+
 @keyframes bounce {
   0%, 80%, 100% {
     transform: scale(0);
@@ -1193,7 +1190,7 @@ body {
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .ai-layout {
     grid-template-columns: 1fr;
