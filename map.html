@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-  <!--
-   @license
-   Copyright 2023 Google LLC. All Rights Reserved.
-   SPDX-License-Identifier: Apache-2.0
-  -->
+ 
   <html>
     <head>
       <title>Aerial View</title>
       <style>
-        /**
-         * @license
-         * Copyright 2023 Google LLC. All Rights Reserved.
-         * SPDX-License-Identifier: Apache-2.0
-         */
+      
         html,
         body {
           align-items: center;
@@ -49,12 +41,7 @@
       </div>
     </body>
     <script>
-      /**
-       * @license
-       * Copyright 2023 Google LLC. All Rights Reserved.
-       * SPDX-License-Identifier: Apache-2.0
-       */
-      // To use video ID as parameter input instead of address, replace parameter value with a videoID '-wVXGP6Hkogfqz6sZulUf3'.
+   
       const PARAMETER_VALUE = '1600 Amphitheatre Parkway, Mountain View, CA 94043';
       const API_KEY = 'INSERT_YOUR_API_KEY';
 
@@ -68,7 +55,7 @@
           }
         });
 
-        // Parameter key can accept either 'videoId' or 'address' depending on input.
+     
         const parameterKey = videoIdOrAddress(PARAMETER_VALUE);
         const urlParameter = new URLSearchParams();
         urlParameter.set(parameterKey, PARAMETER_VALUE);
