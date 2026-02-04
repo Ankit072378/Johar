@@ -1181,7 +1181,7 @@ body {
   }
 }
 
-/* @keyframes pulse {
+@keyframes pulse {
   0%, 100% {
     opacity: 1;
   }
@@ -1266,4 +1266,4 @@ body {
   .hero-description {
     font-size: var(--font-size-lg);
   }
-} */
+}
